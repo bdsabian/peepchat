@@ -21,6 +21,12 @@ module.exports = function(environment) {
     DS: {
       host: 'http://lvh.me:4000',
       namespace: 'api'
+    },
+
+    'ember-simple-auth': {
+      authenticationRoute: 'auth.login',
+      routeIfAlreadyAuthenticated: 'app.index',
+      routeAfterAuthentication: 'app.index'
     }
   };
 
